@@ -1,0 +1,62 @@
+:root {
+  // colors
+  --color-red: hsl(0, 78%, 62%);
+  --color-cyan: hsl(180, 62%, 55%);
+  --color-orange: hsl(34, 97%, 64%);
+  --color-blue: hsl(212, 86%, 64%);
+  --color-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+
+  // fonts
+  --font-primary: "Poppins", sans-serif;
+  --font-author: "Grape Nuts", cursive;
+
+  // box-shadow
+  --box-shadow: 0px 1.5rem 3rem -1.1rem rgba(131, 166, 210, 0.5);
+}
+
+// responsive breakpoints
+$bp-large: 73em; ////////////// 1168px
+$bp-medium: 55em; ///////////// 880px
+$bp-small: 32em; ////////////// 512px
+$bp-smallest: 23em; /////////// 368px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-light-gray);
+  color: var(--color-dark-blue);
+  min-height: 100vh;
+
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 2.3rem;
+  padding-top: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 8.5rem 3.2rem;
+  }
+}

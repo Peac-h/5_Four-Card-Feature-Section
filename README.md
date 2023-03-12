@@ -10,6 +10,8 @@ Built in accordance with given references. Made beautiful for all screen size de
 
 [Four card feature section](https://peac-h.github.io/5_Four-Card-Feature-Section/)
 
+![Four card feature section](https://raw.githubusercontent.com/Peac-h/5_Four-Card-Feature-Section/main/Screenshot.png)
+
 ## Built with
 
 - html
